@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
+body {
+	font-family: bahnschrift;
+	font-weight: bold;
+	overflow-x: hidden;
+}
+
+/*********** FOR STICKY FOOTER******** */
+
+.site {
+	display: flex;
+	flex-direction: column;
+}
+
+.site-content {
+	padding-top: 5px;
+	flex-grow: 1;
+	background-image: url(images/spurs20.jpg);
+	background-repeat: none;
+	z-index: 1;
+}
+
+/**************** END STICKY FOOTER******/
+
+header {
+	background-color: #ff8200;
+	text-align: center;
+	border-bottom: 10px solid #465659;
+}
+
+/********* FOR MENU NAVIGATION **********/
+
+header nav {
+  text-align: center;
+  margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav a {
+  color: #B0D1A1;
+  background: black;
+  padding: 10px;
+  text-decoration: none;
+	border-radius: 5px;
+}
+
+nav a:hover {
+  padding: 10px;
+	background: #465659;
+	box-shadow: inset 0 0 0 5px black;
+	}
+
+/********* END MENU NAVIGATION **********/
+
+.image-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+figure {
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+	max-height: 300px;
+	border-radius: 150px;
+	padding: 2px;
+}
+
+.logo {
+	border-radius: 0px;
+}
+
+.text-content {
+	margin-top: 5vh;
+	height: 20vh;
+}
+
+article {
+	max-width: 80%;
+	margin: auto;
+	background-color: rgba(210,210,210,0.85);
+	border-radius: 10px;
+	padding: 2%;
+	box-shadow: 0 5px 15px rgba(195,175,155,.5);
+}
+
+article.article-clear {
+	margin: auto;
+	background-color: rgba(0,0,0,0.0);
+	box-shadow: none;
+}
+
+article p {
+	max-width: 90%;
+	margin: auto;
+}
+
+footer {
+	background-color: #000000;
+	color: #ffffff;
+	height: 25px;
+	text-align: center;
+	padding: 15px;
+}
+
+/**** start min width 600px ******/
+
+@media (min-width: 600px) {
+	figure {
+			width: 50%;
+	}
+	img {
+		max-width: 100%;
+	}
+}
+/**** end min width 600px ******/
+
+/**** start min width 1040 px******/
+
+@media (min-width: 1040px) {
+		figure {
+				width: 25%;
+		}
+}
+/******** END MIN WIDTH 1040px *****/
+
+/********* LEGEND PAGE ************/
+
+#legend-section {
+	background-image: url(images/coyotevector.png);
+	padding-top: 5px;
+	flex-grow: 1;
+	background-size: 100%;
+	z-index: 1;
+	display: flex;
+}
+
+.mural1 {
+	border-radius: 0px;
+}
+
+.legend-bottom figure {
+		width: 50%;
+}
+
+/********* YOUNG PAGE ******************/
+
+#young-section {
+	background-image: url(images/spurs11.jpg);
+	padding-top: 5px;
+	flex-grow: 1;
+	background-size: 100%;
+	z-index: 1;
+	justify-content: space-between;
+}
+
+#young-section article  {
+	max-width: 80%;
+	border-radius: 5px;
+}
+
+#young-section figure{
+	display: inline;
+}
